@@ -1,0 +1,74 @@
+@extends('layouts.app-fox')
+
+@section('content')
+
+
+
+<header class="masthead top-gap">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mt-5">You are a model.</h1><h1 class="mb-5">Be the #1 hottest.</h1>
+            <a href="{{ url('/register') }}" class="btn button mb-5">Start Now!</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                <div class="row">
+                    <div class="col-md-12 bg-white">
+                        <h4 class="text-center">Models</h4>
+                        <div class="list-group sort">
+                            <a href="{{ url('/models') }}" class="btn">Featured</a>
+                            <a href="{{ url('/models/list') }}" class="btn active">Top 100</a>
+                        </div>	
+                        
+
+                        <div class="container models">
+                          <div class="list-group" id="models" role="tablist">
+                                    @for ($i = 0; $i < 5; $i++)
+                                    
+                                    @include('home/showcase')
+                                    
+                                    @endfor                                                                                                                            
+                          </div>        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+                <div class="home-button">
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; Flame VIP 2019. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+						
+@endsection

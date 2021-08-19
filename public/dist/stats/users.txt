@@ -1,0 +1,31 @@
+{
+  "data": [
+    [
+      "<a href=\"username\" class=\"btn btn-sm id-button\">1</a>",
+      "Username",
+      "<span class=\"badge badge-danger\">Model</span>",
+      "43",
+      "54",
+      "$3000",
+      "<a href=\"/model/username/analytics\" class=\"btn btn-sm button\">Analytics</a>"
+    ],
+    [
+      "<a href=\"username\" class=\"btn btn-sm id-button\">2</a>",
+      "Username",
+      "<span class=\"badge badge-primary\">Subscriber</span>",
+      "0",
+      "12",
+      "$300",
+      "<a href=\"/model/username/analytics\" class=\"btn btn-sm button\">Analytics</a>"
+    ],
+    [
+      "<a href=\"username\" class=\"btn btn-sm id-button\">3</a>",
+      "Username",
+      "<span class=\"badge badge-secondary\">Member</span>",
+      "0",
+      "4",
+      "0",
+      "<a href=\"/model/username/analytics\" class=\"btn btn-sm button\">Analytics</a>"
+    ]
+  ]
+}
